@@ -2,6 +2,7 @@
 
 if( isset( $_GET[ 'Submit' ] ) ) {
 	// Get input
+	
 	//$id = $_GET[ 'id' ];
 	
 	// Use Post instead of get
