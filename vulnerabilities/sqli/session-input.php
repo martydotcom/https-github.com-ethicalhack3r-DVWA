@@ -12,7 +12,7 @@ if( isset( $_POST[ 'id' ] ) ) {
 	$_SESSION[ 'id' ] =  $_POST[ 'id' ];
 	
 	//only allow certin data ??
-	$_SESSION =htmlspecialchars($id);
+	$_id = htmlspecialchars($id);
 	
 	//$page[ 'body' ] .= "Session ID set!<br /><br /><br />";
 	$page[ 'body' ] .= "Session ID: {$_SESSION[ 'id' ]}<br /><br /><br />";
