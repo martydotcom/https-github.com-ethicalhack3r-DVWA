@@ -5,7 +5,7 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 	$id = $_REQUEST[ 'id' ];
 	
 	//Use the mysql_real_escape_string() in PHP to avoid characters that could lead to an unintended SQL command
-	//A modified version for the login bypass scenario would look like the following:
+	
 	$id = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $id);
 
 	// Check database
