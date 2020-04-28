@@ -2,7 +2,14 @@
 
 if( isset( $_GET[ 'Submit' ] ) ) {
 	// Get input
-	$id = $_GET[ 'id' ];
+	//$id = $_GET[ 'id' ];
+	
+	// Use Post instead of get
+	$id = $_Post[ 'id' ];
+	
+	
+	// Remove Slashes
+	$id = stripslashes( $id );
 
 	// Check database
 	$getid  = "SELECT first_name, last_name FROM users WHERE user_id = '$id';";
