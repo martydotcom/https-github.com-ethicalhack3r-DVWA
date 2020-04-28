@@ -3,6 +3,8 @@
 if( isset( $_GET[ 'Login' ] ) ) {
 	// Get username
 	$user = $_GET[ 'username' ];
+	//remove slashes to start
+	$user = stripslashes( $user );
 
 	// Get password
 	$pass = $_GET[ 'password' ];
